@@ -1,7 +1,8 @@
 #!/usr/bin/env python 3
 """create a class FIFOCache that inherits form BaseCacheing
 You must use self.cache_data - dictionary from the parent class BaseCaching
-You can overload def __init__(self): but don’t forget to call the parent init: super().__init__()
+You can overload def __init__(self): but don’t forget
+to call the parent init: super().__init__()
 def put(self, key, item):
 Must assign to the dict self.cache_data the item value for the key key.
 If key or item is None, the method should not do anything.
