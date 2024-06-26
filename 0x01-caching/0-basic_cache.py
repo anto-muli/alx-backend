@@ -9,19 +9,19 @@ if key is "None" or non-existend return None
 
 BaseCaching = __import__('base_caching').BaseCaching
 
+
 class BasicCache(BaseCaching):
     """_summary_
     """
-    
-    def __init__(self)
-    """_summary_
-    """
-    super().__init__()
-    
+
+    def __init__(self):
+        """_summary_
+        """
+        super().__init__()
+
     def put(self, key, item):
         """_summary_
-        
-        
+
         Args:
                 key (_type_): _description_
                 item (_type_): _description_
@@ -30,12 +30,12 @@ class BasicCache(BaseCaching):
             pass
         else:
             self.cache_data[key] = item
-            
+
     def get(self, key):
-        """return the value linked to self.cache key
-        
+        """return the value in self.cache_data linked to key
+
         Args:
-                key (_type): _description_
+                key (_type_): _description_
         """
         if key is None or key not in self.cache_data.keys():
             return None
